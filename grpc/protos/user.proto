@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package userservice;
+
+
+service UserService {
+    // Method returns user data by ID
+    rpc GetUser (UserRequest) returns (UserResponse) {}
+
+    // Method create a new user and returns his data
+    rpc CreateUser (CreateUserRequest) returns (CreateUserResponse) {}
+}
+
+
+// Request for retrieving user by ID
+message UserRequest {
+    uint32 id = 1;
+}
+
+// Response with user data
+message UserResponse {
+    uint32 id = 1;
+    string name = 2;
+    uint32 age = 3;
+}
+
+// Request for creating user 
+message CreateUserRequest {
+    string name = 1;
+    uint32 age = 2;
+}
+
+// Response of successful creating user result
+message CreateUserResponse {
+    uint32 id = 1;
+    string name = 2;
+    uint32 age = 3;
+}
