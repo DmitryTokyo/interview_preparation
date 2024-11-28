@@ -6,7 +6,7 @@
 Устанавливаем в окружение
 ````shell
 python3 -m venv .venv
-pip install grpcio grpcio-tools
+pip install grpcio grpcio-tools fastapi uvicorn requests
 ````
 
 Проходим [Quick start](https://grpc.io/docs/languages/python/quickstart/) и [Basic tutorial](https://grpc.io/docs/languages/python/basics/)
