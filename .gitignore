@@ -68,3 +68,8 @@ fabric.properties
 
 .idea/
 .DS_Store
+.venv/
+.vscode/
+helloworld/
+route_guide/
+*/__pycache__/*
