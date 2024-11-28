@@ -73,3 +73,7 @@ fabric.properties
 helloworld/
 route_guide/
 */__pycache__/*
+
+# gRPC Python files
+*_pb2.py
+*_pb2_grpc.py
